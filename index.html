@@ -7,13 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <title>Surat untuk Nakula</title>
+    <title>Surat untuk Mu </title>
     <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
     <meta name="description" content="HTML Bucin Malas.id">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
       body {
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -77,73 +76,117 @@
     font-size: 0.8em;
     text-align: center;
     color: #888;
+    position: relative;
+    padding-top: 2em;
 }
 
+
+/*.letter-footer::before {
+    content: "";
+    position: absolute;
+    top: -2em; /* Adjust this value to position the image correctly */
+   /* left: 50%;
+    transform: translateX(-50%);
+    /*right: 0; */
+    /*width: auto;
+    height: 2em; /* Adjust height as needed */
+   /* background: url('https://0xhera4.github.io/images-removebg-preview.png') center center no-repeat;
+    background-size: auto 100%; */
+
+.footer-image {
+    width: 270px; 
+    height: auto;
+    display: block;
+    margin: 10px auto; 
+}
 blockquote {
     margin: 20px 0;
     padding: 10px;
     border-left: 5px solid #ddd;
     background-color: #f9f9f9;
+    /*position: relative; */
     position: relative;
 }
 
 .love-image {
-    position: absolute;
-    left: 10px;
-    top: 50px; /* Adjust this value to position the image correctly */
-    width: 30px; /* Adjust size as needed */
+    /*position: static;*/
+    position: absolute ;
+    right: 20px;
+    top: 20px;
+    width: 20%; 
     height: auto;
+}
+.untuk_mu {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 audio {
     display: none;
 }
-
-    </style>
+.kopi {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+</style>
 </head>
 <body>
     <div class="letter-container">
         <div class="letter-header">
-            <p>Jakarta, 20 Oktober 2020</p>
+            <p>Belitang , juli 2024 </p>
         </div>
         <div class="letter-content">
-            <p>Untuk Kakak Nakula,</p>
-            <p>Di Perumahan Melati Blok A1 No. 23</p>
+            <p>Untuk Alin Yulaika </p>
+            <p> Dimana pun kamu berada .....</p>
             <blockquote>
-                <p>Jika aku matahari, mungkin kamu bulannya.</p>
-                <p>Jika aku pelangi, mungkin kamu hujannya.</p>
-                <p>Jika aku serangga, mungkin kamu adalah salah satu bunga yang sedang mekar.</p>
+                <p class="kopi">Jika aku Kopi hitam, Mungkin kamu gulanya.</p>
+                <p class="kopi">Kehadiran mu membuat kepahitanku menjadi lebih Manis.</p>
+                <p></p>
             </blockquote>
-            <img src="heart.png" alt="Love" class="love-image">
-            <p>Pertama bertemu, aku suka padamu...</p>
-            <p>Dari Matahari untuk Ketua MOS.</p>
+            <img src="https://0xhera4.github.io/12368361545_e9e45e931e_z-removebg.png" alt="Love" class="love-image">
+            <p>aku kesal padamu. Kenapa? Karena, kamu orang tercuekk  yang pernah kutemui. Kupikir, sifatmu akan sebagus parasmu, tetapi aku salah.</p>
+            <p>Namun, aku juga bisa saja salah menilaimu, dan mungkin suatu hari nanti surat ini yang salah.</p>
+            <p>Aku memang belum mengenal kamu seutuhnya, dan aku tidak banyak tahu tentang kamu. Mungkin kekesalan yang aku tulis saat ini padamu adalah sebuah kesalahan. Tapi, kamu juga harus tahu, manusia belajar dari sebuah kesalahan. Jika surat ini sebuah kesalahan, aku hanya berharap aku bisa belajar lebih banyak dari kesalahan itu. Tentang kamu dan dunia yang tidak aku ketahui sebelumnya.</p>
+            <p>Jujur, aku suka sama kamu, aku harap itu karena kebaikan yang ada pada Hati mu , bukan karena paras Cantikk yang kamu miliki saat ini.</p>
+            <p>Dari Ahmed  untuk Ayinn .</p>
         </div>
         <div class="letter-footer">
-            <p>(Dikutip dengan penyesuaian dari Eko Ivano Winata, 2018: 318-319)</p>
+            <img src="https://0xhera4.github.io/images-removebg-preview.png" alt="Footer Love" class="footer-image">
+            <p class="untuk_mu">Tentang Kamu dan Dunia ini </p>
         </div>
     </div>
-    <audio src="https://feeldreams.github.io/maukahkamu/seandainya.mp3" autoplay loop></audio>
+    <audio id="bg-music" src="https://0xhera4.github.io/lv_0_20240713123308.mp3" loop></audio>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script><script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
         // Memulai audio setelah interaksi pengguna
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
                 Swal.fire({
                     title: 'Hei!',
-                    text: 'Klik OK untuk mendengar musik.',
+                    text: 'Klik OK untuk Melanjutkan',
+                    imageUrl: 'https://0xhera4.github.io/Untitled_Export_V2.jpeg',
+                    imageWidth: 100,
+                    imageHeight: 100,
+                    imageAlt: 'Love Image',
                     icon: 'info',
-                    confirmButtonText: 'OK'
+                    confirmButtonText: 'OK',
+                    allowOutsideClick: false,  // Tidak bisa dihilangkan dengan mengklik di luar alert
+                    allowEscapeKey: false      // Tidak bisa dihilangkan dengan tombol escape
                 }).then((result) => {
                     if (result.isConfirmed) {
                         var audio = document.getElementById('bg-music');
-                        audio.play();
+                        audio.play().catch(function(error) {
+                            console.error('Error playing audio:', error);
+                        });
                     }
                 });
             }, 500); // Memunculkan alert setelah 500ms
         });
     </script>
-    
 </body>
 </html>
