@@ -1,0 +1,213 @@
+/* import area */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+html {
+    
+    background-color: #1f1c23;
+    background-image: linear-gradient(to bottom right, #1f1c23, #383340);
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgb(0, 0, 0, 0.1);
+    font-smooth: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+/* a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+/*  Definisikan layout */
+
+.walpaper {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+/*  buat jadi sejajar antara text dan gambar */
+.content {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/*  tambahkan background */
+.walpaper {
+    background-image: url(/assets/aincard.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
+}
+
+.side {
+    display: flex;
+    position: relative; 
+    /* min-height: 40vh;  */
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    width: 20rem;
+    margin-right: 50px; /* Tambahkan margin antara gambar dan teks */
+    /* padding: 10px; Padding dalam elemen gambar */
+}  
+
+.side {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.about {
+    max-width: 26rem;
+}
+
+/*  buat jadi responsive */
+@media screen and (max-width: 799px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+
+    .side {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}
+
+/* responsive desktop */
+@media screen and (min-width: 800px) {
+    .content {
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+
+    .side {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 20rem;
+        margin-left: 4rem;
+        order: 2;
+        width: 20rem;
+    }
+
+    .about {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+.walpaper
+.picture-shadow
+.picture-image {
+    display: flex;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.picture {
+    padding-top: 12px;
+    position: relative;
+    width: 100%;
+}
+
+.picture-shadow {
+    border-radius: 290486px;
+    background-image: radial-gradient(#000 0% rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 100%;
+}
+
+.picture-image {
+    border-radius: 290486px;
+    position: absolute;
+}
+
+.name {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.job,
+.button {
+font-family: "Montserrat", "Quicksand", sans-serif;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+}
+
+.job {
+    color: #79d0ff;
+    font-size: 0.75rem;
+}
+
+hr {
+    background-color: #4705ff;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 4rem;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+}
+
+.social a {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
+}
+
+.social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.social a:active {
+    opacity: 1;
+    transform: scale(1.1);
+}
